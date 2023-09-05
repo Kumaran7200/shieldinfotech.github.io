@@ -1,11 +1,10 @@
-@media (max-width:1334px) {
-
+@media (max-width: 1334px) {
   .section-hero {
     height: 130vh;
   }
 }
 
-@media (max-width:1126px) {
+@media (max-width: 1126px) {
   .section-hero {
     height: max-content;
   }
@@ -21,9 +20,9 @@
   width: max-content;
 }
 
-@media(max-width:1016px) {
+@media (max-width: 1016px) {
   .section-hero {
-    padding: 9.6rem 0;
+    padding: 9.6rem 3.2rem;
   }
 
   h1 {
@@ -40,6 +39,12 @@
 
   h4 {
     font-size: 2rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 4.8rem;
   }
 
   .grid--2-cols {
@@ -140,7 +145,6 @@
     display: none;
   }
 
-
   .main-nav-list {
     flex-direction: column;
     gap: 4.8rem;
@@ -150,10 +154,15 @@
   .main-nav-link:visited {
     font-size: 3rem;
   }
-
 }
 
-@media(max-width:704px) {
+@media (max-width: 704px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 300px;
+    /* padding-right: 15rem; */
+    /* gap: 6.4rem; */
+  }
   .grid--3-cols {
     grid-template-columns: 1fr;
     place-items: center;
@@ -162,18 +171,31 @@
   .grid--2-cols {
     grid-template-columns: 1fr;
     place-items: center;
+    padding: 3.2rem;
   }
 
   .career-img {
     width: 50%;
   }
-
+  .cta-form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
-@media(max-width:544px) {
+@media (max-width: 544px) {
   .grid--4-cols {
     grid-template-columns: 1fr;
     place-items: start;
+  }
+
+  .hero {
+    display: block;
+    padding: 0;
+  }
+  .btn {
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
   }
 
   .footer-img {
@@ -182,5 +204,11 @@
 
   .contacts-col {
     align-items: start;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  .cta-text-box {
+    padding: 2rem;
   }
 }

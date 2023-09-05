@@ -8,7 +8,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 
 }
 
@@ -18,7 +18,7 @@ body {
   line-height: 1;
   font-weight: 400;
   cursor: default;
-  overflow: hidden;
+  /* overflow-x: hidden; */
 
 }
 
@@ -131,7 +131,6 @@ p {
   color: #fff;
 }
 
-a,
 ul,
 li {
   font-size: 2.4rem;
@@ -142,6 +141,7 @@ li {
 a:link,
 a:visited {
   color: black;
+  text-decoration: none;
   font-weight: 800;
 }
 
@@ -177,7 +177,13 @@ a:visited {
   border-radius: 50%;
 }
 
-.carousel-button:hover {
+.carousel-button:link,
+.carousel-button:visited{
+  background: body;
+}
+
+.carousel-button:hover,
+.carousel-button:active {
   background: aqua;
 }
 
